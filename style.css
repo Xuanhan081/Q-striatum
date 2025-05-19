@@ -32,15 +32,7 @@ h2{
 .q-menu{
     background: #44486C;
     border-radius: 5px;
-}
-.q-menu2{
-    background: #44486C;
-    height: 76.778px;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    border-radius: 5px;
+    border: 1px solid #F2F2F2;
 }
 .q-menu-list{
     padding: 5px 20px 5px 20px ;
@@ -79,12 +71,6 @@ section{
     border: none;
     background: #25C8AE;
 }
-aside{
-    background: #d4c6c6;
-    height: 100vh;
-    float: right;
-    width: 25%;
-}
 .file-list{
     background: #ffffff;
     margin-left: auto;
@@ -118,4 +104,21 @@ tr:nth-child(even) {
 tr:hover {
   background-color: #e6f7ff;
   cursor: pointer;
+}
+
+aside{
+    background: #d4c6c6;
+    height: 100vh;
+    float: right;
+    width: 25%;
+}
+.q-menu2{
+    background: #44486C;
+    height: 76.778px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #F2F2F2;
 }

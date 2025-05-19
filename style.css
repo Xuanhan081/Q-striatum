@@ -92,6 +92,9 @@ th, td {
   word-wrap: break-word; /* 若內容過長可換行 */
   text-align: left;
   font-size: 14px;
+  white-space: nowrap;       /* ✅ 不換行 */
+  overflow: hidden;          /* ✅ 超出隱藏 */
+  text-overflow: ellipsis;   /* ✅ 加省略號 */
 }
 
 th {
@@ -121,4 +124,16 @@ aside{
     color: #ffffff;
     border-radius: 5px;
     border: 1px solid #F2F2F2;
+}
+.caseinfo{
+    height: 40%;
+    background: #ffffff;
+    max-width: 100%;
+    overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
+    box-sizing: border-box;
+}
+.caseinfo-table{
+    width: 100%;
+    table-layout: fixed;   /* 每欄平均分配寬度，避免撐出外面 */
+    border-collapse: collapse;
 }

@@ -71,6 +71,10 @@ section{
     border: none;
     background: #25C8AE;
 }
+.btnsearch:hover{
+    color: #25C8AE;
+    background: #000;
+}
 .file-list{
     background: #ffffff;
     margin-left: auto;
@@ -100,7 +104,6 @@ th {
 .parainfo-table th{
     background-color: #969696;
 }
-
 tr:nth-child(even) {
   background-color: #fafafa;
 }

@@ -11,7 +11,7 @@
     <div class="wrap">
         <header class="topmenu">
             <ul class="topmenu-list">
-                <li><a href="#">help</a></li>
+                <li><a href="#">Help</a></li>
             </ul>
         </header>
         <section>
@@ -24,49 +24,114 @@
                 <li><a href="#"><img src="icon/infoN_64.png" alt="info"></a></li>
                 </ul>
             </nav>
-            <nav class="serch"></nav>
+            <div class="search">
+                <label for="studydate">Filter : &nbsp;Study&nbsp;Date &nbsp;&nbsp;</label>
+                <select class="dropdown" id="studydate" name="studydate">
+                    <option value="oneweek">Within one week</option>
+                    <option value="onemonth">Within one month</option>
+                    <option value="threemonth">Within three month</option>
+                    <option value="sixmonth">Within six month</option>
+                    <option value="oneyear">Within one year</option>
+                    <option value="all" selected>All</option>
+                </select>
+                <label style="padding-left: 10px;" for="keyword">Patient ID &nbsp;&nbsp;</label>
+                <input class="txtbox" type="text" id="keyword" name="keyword">
+                <button class="btnsearch">Search</button>
+                <label style="color: rgb(255, 255, 255);" for="myTable">&nbsp;| 6 Examinations </label>
+            </div>
             <div class="file-list">
-                <h2>HTML Table</h2>
-                <table>
-                <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                </tr>
-                <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                </tr>
+                <table id="myTable">
+                <thead>
+                    <tr>
+                    <th>No. File</th>
+                    <th>Patient ID</th>
+                    <th>Study Date</th>
+                    <th>Study Description</th>
+                    <th>Modality</th>
+                    <th>Patient Name</th>
+                    <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>T0001</td>
+                        <td>2015-10-15</td>
+                        <td>Brain Trodat SPECT</td>
+                        <td>NM</td>
+                        <td>CASE01</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td>2</td>
+                        <td>T0002</td>
+                        <td>2015-11-04</td>
+                        <td>Brain Trodat SPECT</td>
+                        <td>NM</td>
+                        <td>CASE02</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                        <td>3</td>
+                        <td>T0003</td>
+                        <td>2008-02-19</td>
+                        <td>Brain Trodat SPECT</td>
+                        <td>NM</td>
+                        <td>CASE03</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td>4</td>
+                        <td>T0004</td>
+                        <td>2007-11-12</td>
+                        <td>Brain Trodat SPECT</td>
+                        <td>NM</td>
+                        <td>CASE04</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                        <td>5</td>
+                        <td>T0005</td>
+                        <td>2018-08-03</td>
+                        <td>Brain Trodat SPECT</td>
+                        <td>NM</td>
+                        <td>CASE05</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td>6</td>
+                        <td>T0006</td>
+                        <td>2018-10-26</td>
+                        <td>Brain Trodat SPECT</td>
+                        <td>NM</td>
+                        <td>CASE06</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                </tbody>
                 </table>
             </div>
         </section>
-        <aside></aside>
+        <aside>
+            <nav class="q-menu">Patient ID : T0001</nav>
+        </aside>
     </div>
+
+    <!--自動生成tbody-->
+    <script>
+    const rowCount = 22; // 控制產生幾列（可調大撐滿整頁）
+    const tbody = document.querySelector("#myTable tbody");
+
+    for (let i = 7; i <= rowCount; i++) {
+        const row = document.createElement("tr");
+
+        for (let j = 0; j < 7; j++) {
+        const cell = document.createElement("td");
+        cell.innerHTML = j === 0 ? i : "&nbsp;"; // 第一欄顯示列號，其他空白
+        row.appendChild(cell);
+        }
+
+        tbody.appendChild(row);
+    }
+    </script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+.wrap{
+    width: 100%;
+    min-width: 1190px;
+    background: #000;
+}
 a{
     text-decoration: none;
     color: black;
@@ -5,19 +10,24 @@ a{
 ul{
     list-style-type: none;
 }
+h2{
+    font-size: 30px;
+    padding: 10px 20px 10px 20px ;
+}
 .q-menu-list li a img{
     width: 100px;
 }
 .topmenu{
     padding: 10px;
-    background: #c8ced1;
+    background: #F2F2F2;
+    border-radius: 10px;
 }
 .topmenu-list{
     gap: 24px;
     display: flex;
 }
 .q-menu{
-    background: #c0c7cc;
+    background: #44486C;
 }
 .q-menu-list{
     padding: 10px 20px 10px 20px ;
@@ -25,14 +35,36 @@ ul{
     gap: 20px;
 }
 section{
-    background: #000;
+    background: #ffffff;
     height: 100vh;
     float: left;
-    width: 70%;
+    width: 75%;
 }
 aside{
-    background: #b89a9a;
+    background: #d4c6c6;
     height: 100vh;
     float: right;
-    width: 30%;
+    width: 25%;
+}
+.file-list{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }

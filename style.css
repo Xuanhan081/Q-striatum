@@ -33,6 +33,15 @@ h2{
     background: #44486C;
     border-radius: 5px;
 }
+.q-menu2{
+    background: #44486C;
+    height: 76.778px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 5px;
+}
 .q-menu-list{
     padding: 5px 20px 5px 20px ;
     display: flex;

@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.topmenu{
+    padding: 10px;
+    background: #c8ced1;
+}
+.topmenu-list{
+    gap: 24px;
+    display: flex;
+}

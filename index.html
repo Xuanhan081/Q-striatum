@@ -112,14 +112,68 @@
             </div>
         </section>
         <aside>
-            <nav class="q-menu">Patient ID : T0001</nav>
+            <nav class="q-menu2">
+                <span>Patient ID : T0001</span>
+                <a href="#"><img src="icon/Delet_R_64 .png" alt="Delet_R_64"></a>
+            </nav>
+                <div class="caseinfo">
+                    <table class="caseinfo-table" id="myTable2">
+                        <thead>
+                            <tr>
+                            <th>No.Rec</th>
+                            <th>Ref.Slice</th>
+                            <th>Analysis Date</th>
+                            <th>Analysis Date</th>
+                            <th>Note</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="parainfo">
+                    <table class="parainfo-table" id="myTable3">
+                        <thead>
+                            <tr>
+                            <th>Parameter</th>
+                            <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Shift(mm)</td>
+                                <td>dx/dy/dz</td>
+                            </tr>
+                            <tr>
+                                <td>Rotation(θ)</td>
+                                <td>θx/θy/θz </td>
+                            </tr>
+                            <tr>
+                                <td>Caudate</td>
+                                <td>dx/dy/dθ<br>L :<br>R :</td>
+                            </tr>
+                            <tr>
+                                <td>Putamen</td>
+                                <td>dx/dy/dθ<br>L :<br>R :</td>
+                            </tr>
+                            <tr>
+                                <td>Occipital</td>
+                                <td>dx/dy<br>L :<br>R :</td>
+                            </tr>
+                            <tr>
+                                <td>Cerebellum</td>
+                                <td>dx/dy<br>L :<br>R :</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         </aside>
     </div>
 
     <!--自動生成tbody-->
     <script>
-    const rowCount = 20; // 控制產生幾列（可調大撐滿整頁）
+    const rowCount = 15; // 控制產生幾列（可調大撐滿整頁）
     const tbody = document.querySelector("#myTable tbody");
+    const tbody2 = document.querySelector("#myTable2 tbody");
 
     for (let i = 7; i <= rowCount; i++) {
         const row = document.createElement("tr");
@@ -131,6 +185,17 @@
         }
 
         tbody.appendChild(row);
+    }
+    for (let i = 1; i <= rowCount; i++) {
+        const row = document.createElement("tr");
+
+        for (let j = 0; j < 5; j++) {
+        const cell = document.createElement("td");
+        cell.innerHTML = j === 0 ? i : "&nbsp;"; // 第一欄顯示列號，其他空白
+        row.appendChild(cell);
+        }
+
+        tbody2.appendChild(row);
     }
     </script>
 </body>

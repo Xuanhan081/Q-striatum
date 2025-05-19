@@ -18,7 +18,7 @@ h2{
     font-size: 30px;
     padding: 10px 20px 10px 20px ;
 }
-.q-menu-list li a img{
+img{
     width: 65px;
 }
 .topmenu{
@@ -89,16 +89,16 @@ th, td {
   padding: 10px;
   text-align: center;
   height: 10px;
-  word-wrap: break-word; /* 若內容過長可換行 */
   text-align: left;
   font-size: 14px;
-  white-space: nowrap;       /* ✅ 不換行 */
-  overflow: hidden;          /* ✅ 超出隱藏 */
-  text-overflow: ellipsis;   /* ✅ 加省略號 */
+  white-space: normal;      /* ✅ 允許內容自動換行 */
 }
 
 th {
   background-color: #fffefe;
+}
+.parainfo-table th{
+    background-color: #969696;
 }
 
 tr:nth-child(even) {
@@ -121,6 +121,7 @@ aside{
     padding-left: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: #ffffff;
     border-radius: 5px;
     border: 1px solid #F2F2F2;
@@ -133,7 +134,13 @@ aside{
     box-sizing: border-box;
 }
 .caseinfo-table{
-    width: 100%;
-    table-layout: fixed;   /* 每欄平均分配寬度，避免撐出外面 */
+    width: auto;
     border-collapse: collapse;
+}
+.parainfo{
+    height: 50%;
+    background: #ffffff;
+    max-width: 100%;
+    overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
+    box-sizing: border-box;
 }

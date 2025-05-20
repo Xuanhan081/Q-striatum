@@ -123,6 +123,9 @@ th {
     background-color: #ABABAB;
     text-align: center;
 }
+.parainfo-table tr:nth-child(even){
+    background-color: #EDEDED;
+}
 tr:nth-child(even) {
   background-color: #fafafa;
 }
@@ -139,7 +142,7 @@ aside{
 }
 .q-menu2{
     background: #44486C;
-    height: 76.778px;
+    height: 81px;
     padding-left: 10px;
     display: flex;
     align-items: center;

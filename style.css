@@ -29,6 +29,16 @@ img{
 .title img{
     width: 25px;
 }
+.note{
+    display: flex;
+    color: #ffffff;
+    font-size: 12px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.note p{
+    display: block;
+}
 .topmenu{
     padding: 10px;
     background: #F2F2F2;
@@ -38,6 +48,8 @@ img{
     background: #44486C;
     border-radius: 5px;
     border: 1px solid #F2F2F2;
+    display: flex;
+    justify-content: space-between;
 }
 .q-menu-list{
     padding: 5px 20px 5px 20px ;

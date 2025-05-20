@@ -1,5 +1,7 @@
-body {
+body{
   font-family: Tahoma, sans-serif;
+  background-color: #DBE7F5;
+  line-height: 1.5;
 }
 .wrap{
     width: 100%;
@@ -102,7 +104,8 @@ th {
   background-color: #fffefe;
 }
 .parainfo-table th{
-    background-color: #969696;
+    background-color: #ABABAB;
+    text-align: center;
 }
 tr:nth-child(even) {
   background-color: #fafafa;

@@ -152,11 +152,13 @@ aside{
     border: 1px solid #F2F2F2;
 }
 .caseinfo{
-    height: 40%;
+    height: 50%;
     background: #ffffff;
     max-width: 100%;
     overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
     box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #44486C;
 }
 .caseinfo-table{
     width: auto;
@@ -168,4 +170,6 @@ aside{
     max-width: 100%;
     overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
     box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #44486C;
 }

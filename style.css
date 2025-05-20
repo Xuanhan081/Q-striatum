@@ -1,13 +1,12 @@
 body{
   font-family: Tahoma, sans-serif;
-  background-color: #DBE7F5;
   line-height: 1.5;
 }
 .wrap{
     width: 100%;
     height: 100%;
     min-width: 1190px;
-    background: #000;
+    background: #DBE7F5;
 }
 a{
     text-decoration: none;
@@ -23,13 +22,17 @@ h2{
 img{
     width: 65px;
 }
+.title{
+    justify-content: center;
+    display: flex;
+}
+.title img{
+    width: 25px;
+}
 .topmenu{
     padding: 10px;
     background: #F2F2F2;
     border-radius: 5px;
-}
-.topmenu-list{
-    display: flex;
 }
 .q-menu{
     background: #44486C;
@@ -46,6 +49,7 @@ section{
     height: 100vh;
     float: left;
     width: 75%;
+    background: #DBE7F5;
 }
 .search{
     display: flex;
@@ -116,7 +120,7 @@ tr:hover {
 }
 
 aside{
-    background: #d4c6c6;
+    background: #DBE7F5;
     height: 100vh;
     float: right;
     width: 25%;

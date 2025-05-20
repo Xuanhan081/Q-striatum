@@ -123,7 +123,7 @@ th {
     background-color: #ABABAB;
     text-align: center;
 }
-.parainfo-table tr:nth-child(even){
+.parainfo-table tr:nth-child(odd){
     background-color: #EDEDED;
 }
 tr:nth-child(even) {
@@ -158,10 +158,10 @@ aside{
     overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #44486C;
+    border: 1px solid #ABABAB;
 }
 .caseinfo-table{
-    width: auto;
+    width: 100%;
     border-collapse: collapse;
 }
 .parainfo{
@@ -171,5 +171,5 @@ aside{
     overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #44486C;
+    border: 1px solid #ABABAB;
 }

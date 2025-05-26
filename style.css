@@ -158,8 +158,8 @@ tr:hover {
     border-radius: 5px;
     border: 1px solid #F2F2F2;
 }
-.caseinfo{
-    height: 40%;
+.caseinfo,.parainfo{
+    height: 50%;
     background: #ffffff;
     max-width: 100%;
     overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
@@ -170,13 +170,4 @@ tr:hover {
 .caseinfo-table{
     width: 100%;
     border-collapse: collapse;
-}
-.parainfo{
-    height: 50%;
-    background: #ffffff;
-    max-width: 100%;
-    overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid var(--color-gray);
 }

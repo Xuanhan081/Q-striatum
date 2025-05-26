@@ -29,91 +29,93 @@
                     <p>-Botton-Frist<br>-Global<br>-Full scale</p>
                 </div>
             </nav>
-            <div class="search">
-                <label for="studydate">Filter : &nbsp;Study&nbsp;Date &nbsp;&nbsp;</label>
-                <select class="dropdown" id="studydate" name="studydate">
-                    <option value="oneweek">Within one week</option>
-                    <option value="onemonth">Within one month</option>
-                    <option value="threemonth">Within three month</option>
-                    <option value="sixmonth">Within six month</option>
-                    <option value="oneyear">Within one year</option>
-                    <option value="all" selected>All</option>
-                </select>
-                <label style="padding-left: 10px;" for="keyword">Patient ID &nbsp;&nbsp;</label>
-                <input class="txtbox" type="text" id="keyword" name="keyword">
-                <button class="btnsearch">Search</button>
-                <label style="color: rgb(255, 255, 255);" for="myTable">&nbsp;| 6 Examinations </label>
-            </div>
-            <div class="file-list">
-                <table id="myTable">
-                <thead>
-                    <tr>
-                    <th>No. File</th>
-                    <th>Patient ID</th>
-                    <th>Study Date</th>
-                    <th>Study Description</th>
-                    <th>Modality</th>
-                    <th>Patient Name</th>
-                    <th>&nbsp;</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr onclick="window.open('videos/CASE01_Demo.mp4', '_blank')">
-                        <td>1</td>
-                        <td>T0001</td>
-                        <td>2015-10-15</td>
-                        <td>Brain Trodat SPECT</td>
-                        <td>NM</td>
-                        <td>CASE01</td>
-                        <td></td>
-                    </tr>
-                    <tr onclick="window.open('videos/CASE02_Demo.mp4', '_blank')">
-                        <td>2</td>
-                        <td>T0002</td>
-                        <td>2015-11-04</td>
-                        <td>Brain Trodat SPECT</td>
-                        <td>NM</td>
-                        <td>CASE02</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr onclick="window.open('videos/CASE03_Demo.mp4', '_blank')">
-                        <td>3</td>
-                        <td>T0003</td>
-                        <td>2008-02-19</td>
-                        <td>Brain Trodat SPECT</td>
-                        <td>NM</td>
-                        <td>CASE03</td>
-                        <td></td>
-                    </tr>
-                    <tr onclick="window.open('videos/CASE04_Demo.mp4', '_blank')">
-                        <td>4</td>
-                        <td>T0004</td>
-                        <td>2007-11-12</td>
-                        <td>Brain Trodat SPECT</td>
-                        <td>NM</td>
-                        <td>CASE04</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr onclick="window.open('videos/CASE05_Demo.mp4', '_blank')">
-                        <td>5</td>
-                        <td>T0005</td>
-                        <td>2018-08-03</td>
-                        <td>Brain Trodat SPECT</td>
-                        <td>NM</td>
-                        <td>CASE05</td>
-                        <td></td>
-                    </tr>
-                    <tr onclick="window.open('videos/CASE06_Demo.mp4', '_blank')">
-                        <td>6</td>
-                        <td>T0006</td>
-                        <td>2018-10-26</td>
-                        <td>Brain Trodat SPECT</td>
-                        <td>NM</td>
-                        <td>CASE06</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                </tbody>
-                </table>
+            <div class="container">
+                <div class="search">
+                    <label for="studydate">Filter : &nbsp;Study&nbsp;Date &nbsp;&nbsp;</label>
+                    <select class="dropdown" id="studydate" name="studydate">
+                        <option value="oneweek">Within one week</option>
+                        <option value="onemonth">Within one month</option>
+                        <option value="threemonth">Within three month</option>
+                        <option value="sixmonth">Within six month</option>
+                        <option value="oneyear">Within one year</option>
+                        <option value="all" selected>All</option>
+                    </select>
+                    <label style="padding-left: 10px;" for="keyword">Patient ID &nbsp;&nbsp;</label>
+                    <input class="txtbox" type="text" id="keyword" name="keyword">
+                    <button class="btnsearch">Search</button>
+                    <label style="color: rgb(255, 255, 255);" for="myTable">&nbsp;| 6 Examinations </label>
+                </div>
+                <div class="file-list">
+                    <table id="myTable">
+                    <thead>
+                        <tr>
+                        <th>No. File</th>
+                        <th>Patient ID</th>
+                        <th>Study Date</th>
+                        <th>Study Description</th>
+                        <th>Modality</th>
+                        <th>Patient Name</th>
+                        <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick="window.open('videos/CASE01_Demo.mp4', '_blank')">
+                            <td>1</td>
+                            <td>T0001</td>
+                            <td>2015-10-15</td>
+                            <td>Brain Trodat SPECT</td>
+                            <td>NM</td>
+                            <td>CASE01</td>
+                            <td></td>
+                        </tr>
+                        <tr onclick="window.open('videos/CASE02_Demo.mp4', '_blank')">
+                            <td>2</td>
+                            <td>T0002</td>
+                            <td>2015-11-04</td>
+                            <td>Brain Trodat SPECT</td>
+                            <td>NM</td>
+                            <td>CASE02</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr onclick="window.open('videos/CASE03_Demo.mp4', '_blank')">
+                            <td>3</td>
+                            <td>T0003</td>
+                            <td>2008-02-19</td>
+                            <td>Brain Trodat SPECT</td>
+                            <td>NM</td>
+                            <td>CASE03</td>
+                            <td></td>
+                        </tr>
+                        <tr onclick="window.open('videos/CASE04_Demo.mp4', '_blank')">
+                            <td>4</td>
+                            <td>T0004</td>
+                            <td>2007-11-12</td>
+                            <td>Brain Trodat SPECT</td>
+                            <td>NM</td>
+                            <td>CASE04</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr onclick="window.open('videos/CASE05_Demo.mp4', '_blank')">
+                            <td>5</td>
+                            <td>T0005</td>
+                            <td>2018-08-03</td>
+                            <td>Brain Trodat SPECT</td>
+                            <td>NM</td>
+                            <td>CASE05</td>
+                            <td></td>
+                        </tr>
+                        <tr onclick="window.open('videos/CASE06_Demo.mp4', '_blank')">
+                            <td>6</td>
+                            <td>T0006</td>
+                            <td>2018-10-26</td>
+                            <td>Brain Trodat SPECT</td>
+                            <td>NM</td>
+                            <td>CASE06</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
             </div>
         </section>
         <aside>

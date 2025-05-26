@@ -1,3 +1,7 @@
+:root{
+    --color-info:#DBE7F5;
+    --color-gray:#ABABAB;
+}
 body{
   font-family: Tahoma, sans-serif;
   line-height: 1.5;
@@ -61,7 +65,13 @@ section{
     height: 100vh;
     float: left;
     width: 75%;
-    background: #DBE7F5;
+    background: var(--color-info);
+}
+aside{
+    background: var(--color-info);
+    height: 100vh;
+    float: right;
+    width: 25%;
 }
 .search{
     display: flex;
@@ -120,7 +130,7 @@ th {
   background-color: #fffefe;
 }
 .parainfo-table th{
-    background-color: #ABABAB;
+    background-color: var(--color-gray);
     text-align: center;
 }
 .parainfo-table tr:nth-child(odd){
@@ -134,11 +144,8 @@ tr:hover {
   cursor: pointer;
 }
 
-aside{
-    background: #DBE7F5;
-    height: 100vh;
-    float: right;
-    width: 25%;
+.container2{
+    height: 95%;
 }
 .q-menu2{
     background: #44486C;
@@ -152,13 +159,13 @@ aside{
     border: 1px solid #F2F2F2;
 }
 .caseinfo{
-    height: 50%;
+    height: 40%;
     background: #ffffff;
     max-width: 100%;
     overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #ABABAB;
+    border: 1px solid var(--color-gray);
 }
 .caseinfo-table{
     width: 100%;
@@ -171,5 +178,5 @@ aside{
     overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #ABABAB;
+    border: 1px solid var(--color-gray);
 }

@@ -18,11 +18,11 @@
         <section>
             <nav class="q-menu">
                 <ul class="q-menu-list">
-                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/14026/14026788.png" alt="Upload"></a></li>
-                <li><a href="#"><img src="icon/Delet_F_64 .png" alt="Delete"></a></li>
-                <li><a href="#"><img src="icon/account_64.png" alt="Account"></a></li>
-                <li><a href="#"><img src="icon/setting.png" alt="setting"></a></li>
-                <li><a href="#"><img src="icon/infoN_64.png" alt="info"></a></li>
+                <li><a href="#" title="Upload DCM File (.dcm)"><img src="https://cdn-icons-png.flaticon.com/128/14026/14026788.png" alt="Upload" ></a></li>
+                <li><a href="#" title="Delete Case"><img src="icon/Delet_F_64 .png" alt="Delete"></a></li>
+                <li><a href="#" title="Change Password"><img src="icon/account_64.png" alt="Account"></a></li>
+                <li><a href="#" title="Set Your Preferences"><img src="icon/setting.png" alt="Setting"></a></li>
+                <li><a href="#" title="Inspect File Informations"><img src="icon/infoN_64.png" alt="Info"></a></li>
                 </ul>
                 <div class="note">
                     <p>Default Conf. :</p>
@@ -121,6 +121,7 @@
                 <span>Patient ID : T0001</span>
                 <a href="#"><img src="icon/Delet_R_64 .png" alt="Delet_R_64"></a>
             </nav>
+            <div class="container2">
                 <div class="caseinfo">
                     <table class="caseinfo-table" id="myTable2">
                         <thead>
@@ -171,26 +172,27 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
         </aside>
     </div>
 
     <!--自動生成tbody-->
     <script>
     const rowCount = 20; // 控制產生幾列（可調大撐滿整頁）
-    const tbody = document.querySelector("#myTable tbody");
+    // const tbody = document.querySelector("#myTable tbody");
     const tbody2 = document.querySelector("#myTable2 tbody");
 
-    for (let i = 7; i <= rowCount; i++) {
-        const row = document.createElement("tr");
+    // for (let i = 7; i <= rowCount; i++) {
+    //     const row = document.createElement("tr");
 
-        for (let j = 0; j < 7; j++) {
-        const cell = document.createElement("td");
-        cell.innerHTML = j === 0 ? i : "&nbsp;"; // 第一欄顯示列號，其他空白
-        row.appendChild(cell);
-        }
+    //     for (let j = 0; j < 7; j++) {
+    //     const cell = document.createElement("td");
+    //     cell.innerHTML = j === 0 ? i : "&nbsp;"; // 第一欄顯示列號，其他空白
+    //     row.appendChild(cell);
+    //     }
 
-        tbody.appendChild(row);
-    }
+    //     tbody.appendChild(row);
+    // }
     for (let i = 1; i <= rowCount; i++) {
         const row = document.createElement("tr");
 

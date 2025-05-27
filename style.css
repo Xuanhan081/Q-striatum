@@ -160,7 +160,10 @@ tr:hover {
     text-align: center;
 }
 h4,span{
+    display: inline-flex;
+    align-items: center;
     color: lab(56.59% 50.65 63.53);
+    gap: 6px;
 }
 hr{
     border: 2px solid #000;
@@ -215,8 +218,8 @@ iframe {
   pointer-events: none;
   z-index: 100;
 }
-.demo-only{
-    display: flex;
+.demo-only p{
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;

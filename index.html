@@ -21,11 +21,11 @@
         <section>
             <nav class="q-menu" id="actionList">
                 <ul class="q-menu-list">
-                <li onclick="playVideo('videos/Upload_Demo.mp4')" class="tooltip-item" data-tooltip="Upload DCM File (.dcm)"><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/14026/14026788.png" alt="Upload" ></a></li>
-                <li onclick="playVideo('videos/Delete_Demo.mp4')" class="tooltip-item" data-tooltip="Delete File"><a href="#"><img src="icon/Delet_F_64 .png" alt="Delete"></a></li>
-                <li onclick="playVideo('videos/Account_Demo.mp4')" class="tooltip-item" data-tooltip="Reset Password"><a href="#"><img src="icon/account_64.png" alt="Account"></a></li>
-                <li onclick="playVideo('videos/Setting_Demo.mp4')" class="tooltip-item" data-tooltip="Set Your Preferences"><a href="#"><img src="icon/setting.png" alt="Setting"></a></li>
-                <li onclick="playVideo('videos/Info_Demo.mp4')" class="tooltip-item" data-tooltip="Inspect File Informations"><a href="#"><img src="icon/infoN_64.png" alt="Info"></a></li>
+                <li onclick="openVideoPopup('videos/Upload_Demo.mp4')" class="tooltip-item" data-tooltip="Upload DCM File (.dcm)"><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/14026/14026788.png" alt="Upload" ></a></li>
+                <li onclick="openVideoPopup('videos/Delete_Demo.mp4')" class="tooltip-item" data-tooltip="Delete File"><a href="#"><img src="icon/Delet_F_64 .png" alt="Delete"></a></li>
+                <li onclick="openVideoPopup('videos/Account_Demo.mp4')" class="tooltip-item" data-tooltip="Reset Password"><a href="#"><img src="icon/account_64.png" alt="Account"></a></li>
+                <li onclick="openVideoPopup('videos/Setting_Demo.mp4')" class="tooltip-item" data-tooltip="Set Your Preferences"><a href="#"><img src="icon/setting.png" alt="Setting"></a></li>
+                <li onclick="openVideoPopup('videos/Info_Demo.mp4')" class="tooltip-item" data-tooltip="Inspect File Informations"><a href="#"><img src="icon/infoN_64.png" alt="Info"></a></li>
                 </ul>
                 <div class="note">
                     <p>Default Conf. :</p>
@@ -71,7 +71,7 @@
                             <td>CASE01</td>
                             <td></td>
                         </tr>
-                        <tr onclick="playVideo('videos/CASE01_Demo.mp4')">
+                        <tr onclick="openVideoPopup('videos/CASE01_Demo.mp4')">
                             <td>2</td>
                             <td>T0002</td>
                             <td>2015-11-04</td>
@@ -80,7 +80,7 @@
                             <td>CASE02</td>
                             <td>&nbsp;</td>
                         </tr>
-                        <tr onclick="playVideo('videos/CASE01_Demo.mp4')">
+                        <tr onclick="openVideoPopup('videos/CASE01_Demo.mp4')">
                             <td>3</td>
                             <td>T0003</td>
                             <td>2008-02-19</td>
@@ -89,7 +89,7 @@
                             <td>CASE03</td>
                             <td></td>
                         </tr>
-                        <tr onclick="playVideo('videos/CASE01_Demo.mp4')">
+                        <tr onclick="openVideoPopup('videos/CASE01_Demo.mp4')">
                             <td>4</td>
                             <td>T0004</td>
                             <td>2007-11-12</td>
@@ -98,7 +98,7 @@
                             <td>CASE04</td>
                             <td>&nbsp;</td>
                         </tr>
-                        <tr onclick="playVideo('videos/CASE01_Demo.mp4')">
+                        <tr onclick="openVideoPopup('videos/CASE01_Demo.mp4')">
                             <td>5</td>
                             <td>T0005</td>
                             <td>2018-08-03</td>
@@ -107,7 +107,7 @@
                             <td>CASE05</td>
                             <td></td>
                         </tr>
-                        <tr onclick="playVideo('videos/CASE01_Demo.mp4')">
+                        <tr onclick="openVideoPopup('videos/CASE01_Demo.mp4')">
                             <td>6</td>
                             <td>T0006</td>
                             <td>2018-10-26</td>
@@ -131,7 +131,7 @@
         <aside>
             <nav class="q-menu2">
                 <p>Patient ID : T0001</p>
-                <a href="#" onclick="playVideo('videos/DeleteR_Demo.mp4')" class="tooltip-item" data-tooltip="Delete Records"><img src="icon/Delet_R_64 .png" alt="Delet_R_64"></a>
+                <a href="#" onclick="openVideoPopup('videos/DeleteR_Demo.mp4')" class="tooltip-item" data-tooltip="Delete Records"><img src="icon/Delet_R_64 .png" alt="Delet_R_64"></a>
             </nav>
             <div class="container container-right">
                 <div class="caseinfo">
@@ -146,21 +146,21 @@
                             </tr>
                         </thead>
                         <tbody title="Select to enter Manual ROI selection mode">
-                            <tr onclick="playVideo('videos/TableR_Demo.mp4')">
+                            <tr onclick="openVideoPopup('videos/TableR_Demo.mp4')">
                                 <td>1</td>
                                 <td>125</td>
                                 <td>2025-05-27</td>
                                 <td>12:24:25</td>
                                 <td>Report</td>
                             </tr>
-                            <tr onclick="playVideo('videos/TableR_Demo.mp4')">
+                            <tr onclick="openVideoPopup('videos/TableR_Demo.mp4')">
                                 <td>2</td>
                                 <td>126</td>
                                 <td>2025-05-28</td>
                                 <td>11:56:29</td>
                                 <td></td>
                             </tr>
-                            <tr onclick="playVideo('videos/TableR_Demo.mp4')">
+                            <tr onclick="openVideoPopup('videos/TableR_Demo.mp4')">
                                 <td>3</td>
                                 <td>126</td>
                                 <td>2025-05-28</td>
@@ -241,5 +241,14 @@
         }
     </script>
     <script src="all.js"></script>
+    <script>
+        function openVideoPopup(src) {
+            window.open(
+            `${src}`,     // 網頁路徑（可換成任何網址）
+            "Demo_Video",    // 視窗名稱
+            "width=1280,height=720,scrollbars=yes,resizable=yes"
+            );
+        }
+    </script>
 </body>
 </html>

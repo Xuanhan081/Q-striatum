@@ -172,6 +172,7 @@ h3{
 }
 
 iframe {
+    width: 100%;
     min-width: 1000px;
     box-sizing: border-box;
     height: 460px;

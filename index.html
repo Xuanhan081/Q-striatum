@@ -16,7 +16,7 @@
             </ul>
         </header>
         <section>
-            <nav class="q-menu">
+            <nav class="q-menu" id="actionList">
                 <ul class="q-menu-list">
                 <li><a href="#" title="Upload DCM File (.dcm)"><img src="https://cdn-icons-png.flaticon.com/128/14026/14026788.png" alt="Upload" ></a></li>
                 <li><a href="#" title="Delete Case"><img src="icon/Delet_F_64 .png" alt="Delete"></a></li>
@@ -29,7 +29,7 @@
                     <p>-Botton-Frist<br>-Global<br>-Full scale</p>
                 </div>
             </nav>
-            <div class="container">
+            <div class="container container-left">
                 <div class="search">
                     <label for="studydate">Filter : &nbsp;Study&nbsp;Date &nbsp;&nbsp;</label>
                     <select class="dropdown" id="studydate" name="studydate">
@@ -116,6 +116,8 @@
                     </tbody>
                     </table>
                 </div>
+                <h3><hr>Demo Video<hr></h3>
+                <iframe id="videoFrame" src="" allowfullscreen></iframe>
             </div>
         </section>
         <aside>
@@ -123,7 +125,7 @@
                 <span>Patient ID : T0001</span>
                 <a href="#"><img src="icon/Delet_R_64 .png" alt="Delet_R_64"></a>
             </nav>
-            <div class="container2">
+            <div class="container container-right">
                 <div class="caseinfo">
                     <table class="caseinfo-table" id="myTable2">
                         <thead>
@@ -180,7 +182,7 @@
 
     <!--自動生成tbody-->
     <script>
-    const rowCount = 20; // 控制產生幾列（可調大撐滿整頁）
+    const rowCount = 10; // 控制產生幾列（可調大撐滿整頁）
     // const tbody = document.querySelector("#myTable tbody");
     const tbody2 = document.querySelector("#myTable2 tbody");
 
@@ -207,5 +209,25 @@
         tbody2.appendChild(row);
     }
     </script>
+    <script>
+    const videoMap = {
+      "Upload": "videos/Upload_Demo.mp4",
+      "Delete": "videos/Upload_Demo.mp4",
+      "Account": "videos/Upload_Demo.mp4"
+    };
+
+    document.querySelectorAll('#actionList li a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const action = link.querySelector('img').alt.trim();
+        const videoSrc = videoMap[action];
+        if (videoSrc) {
+          document.getElementById('videoFrame').src = videoSrc;
+        } else {
+          alert('Sorry！We do not have the correspond videos !');
+        }
+      });
+    });
+  </script>
 </body>
 </html>

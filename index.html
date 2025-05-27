@@ -18,11 +18,11 @@
         <section>
             <nav class="q-menu" id="actionList">
                 <ul class="q-menu-list">
-                <li onclick="playVideo('videos/Upload_Demo.mp4')"><a href="#" title="Upload DCM File (.dcm)"><img src="https://cdn-icons-png.flaticon.com/128/14026/14026788.png" alt="Upload" ></a></li>
-                <li onclick="playVideo('videos/Delete_Demo.mp4')"><a href="#" title="Delete Case"><img src="icon/Delet_F_64 .png" alt="Delete"></a></li>
-                <li onclick="playVideo('videos/Account_Demo.mp4')"><a href="#" title="Change Password"><img src="icon/account_64.png" alt="Account"></a></li>
-                <li onclick="playVideo('videos/Setting_Demo.mp4')"><a href="#" title="Set Your Preferences"><img src="icon/setting.png" alt="Setting"></a></li>
-                <li onclick="playVideo('videos/Info_Demo.mp4')"><a href="#" title="Inspect File Informations"><img src="icon/infoN_64.png" alt="Info"></a></li>
+                <li onclick="playVideo('videos/Upload_Demo.mp4')" class="tooltip-item" data-tooltip="Upload DCM File (.dcm)"><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/14026/14026788.png" alt="Upload" ></a></li>
+                <li onclick="playVideo('videos/Delete_Demo.mp4')" class="tooltip-item" data-tooltip="Delete File"><a href="#"><img src="icon/Delet_F_64 .png" alt="Delete"></a></li>
+                <li onclick="playVideo('videos/Account_Demo.mp4')" class="tooltip-item" data-tooltip="Reset Password"><a href="#"><img src="icon/account_64.png" alt="Account"></a></li>
+                <li onclick="playVideo('videos/Setting_Demo.mp4')" class="tooltip-item" data-tooltip="Set Your Preferences"><a href="#"><img src="icon/setting.png" alt="Setting"></a></li>
+                <li onclick="playVideo('videos/Info_Demo.mp4')" class="tooltip-item" data-tooltip="Inspect File Informations"><a href="#"><img src="icon/infoN_64.png" alt="Info"></a></li>
                 </ul>
                 <div class="note">
                     <p>Default Conf. :</p>
@@ -58,7 +58,7 @@
                         <th>&nbsp;</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody title="Select to enter Manual ROI selection mode">
                         <tr onclick="playVideo('videos/CASE01_Demo.mp4')">
                             <td>1</td>
                             <td>T0001</td>
@@ -123,7 +123,7 @@
         <aside>
             <nav class="q-menu2">
                 <span>Patient ID : T0001</span>
-                <a href="#" onclick="playVideo('videos/DeleteR_Demo.mp4')"><img src="icon/Delet_R_64 .png" alt="Delet_R_64"></a>
+                <a href="#" onclick="playVideo('videos/DeleteR_Demo.mp4')" class="tooltip-item" data-tooltip="Delete Records"><img src="icon/Delet_R_64 .png" alt="Delet_R_64"></a>
             </nav>
             <div class="container container-right">
                 <div class="caseinfo">
@@ -137,7 +137,7 @@
                             <th>Note</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody title="Select to enter Manual ROI selection mode">
                             <tr onclick="playVideo('videos/TableR_Demo.mp4')">
                                 <td>1</td>
                                 <td>125</td>

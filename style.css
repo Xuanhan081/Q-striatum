@@ -180,3 +180,35 @@ iframe {
     background: #000;
     margin: 0px;
 }
+.tooltip-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-item::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-10%);
+  background-color: #222;
+  color: white;
+  padding: 6px 10px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 5px solid #ffcc00;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.tooltip-item:hover::after {
+  opacity: 1;
+}
+
+.q-menu2 .tooltip-item::after{
+  transform: translateX(-100%);
+}

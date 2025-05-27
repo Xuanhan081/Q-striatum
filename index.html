@@ -62,7 +62,7 @@
                         </tr>
                     </thead>
                     <tbody title="Select to enter Manual ROI selection mode">
-                        <tr onclick="playVideo('videos/CASE01_Demo.mp4')">
+                        <tr onclick="openVideoPopup('videos/CASE01_Demo.mp4')">
                             <td>1</td>
                             <td>T0001</td>
                             <td>2015-10-15</td>
@@ -119,13 +119,13 @@
                     </tbody>
                     </table>
                 </div>
-                <hr>
+                <!-- <hr>
                 <div class="demo-only">
                     <p>Demo Video &nbsp;
                         <span><i class="bi bi-exclamation-diamond-fill"></i> This is a demo-only feature and is not included in the final product <i class="bi bi-exclamation-diamond-fill"></i></span>
                     </p>
                 </div>
-                <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                <iframe id="videoFrame" src="" allowfullscreen></iframe> -->
             </div>
         </section>
         <aside>
@@ -209,42 +209,37 @@
             </div>
         </aside>
     </div>
-
-    <!--自動生成tbody-->
+    <!-- 自動生成tbody -->
     <script>
-    const rowCount = 15; // 控制產生幾列（可調大撐滿整頁）
-    const tbody2 = document.querySelector("#myTable2 tbody");
-    for (let i = 4; i <= rowCount; i++) {
-        const row = document.createElement("tr");
+        const rowCount = 23; // 控制產生幾列（可調大撐滿整頁）
+        const tbody = document.querySelector("#myTable tbody");
+        for (let i = 7; i <= rowCount; i++) {
+            const row = document.createElement("tr");
 
-        for (let j = 0; j < 5; j++) {
-        const cell = document.createElement("td");
-        cell.innerHTML = j === 0 ? i : "&nbsp;"; // 第一欄顯示列號，其他空白
-        row.appendChild(cell);
-        }
+            for (let j = 0; j < 7; j++) {
+            const cell = document.createElement("td");
+            cell.innerHTML = j === 0 ? i : "&nbsp;"; // 第一欄顯示列號，其他空白
+            row.appendChild(cell);
+            }
 
-        tbody2.appendChild(row);
-    }
-    </script>
-
-
-    <script>
-        function playVideo(src) {
-            const video = document.getElementById("videoFrame");
-            video.src = src;
-            video.load();  // 重新載入影片
-            video.play();  // 自動播放
+            tbody.appendChild(row);
         }
     </script>
-
     <script>
-    function openPopup() {
-        window.open(
-        "popup.html",     // 網頁路徑（可換成任何網址）
-        "popupWindow",    // 視窗名稱
-        "width=600,height=400,scrollbars=yes,resizable=yes"
-        );
-    }
+        const rowCount2 = 15; // 控制產生幾列（可調大撐滿整頁）
+        const tbody2 = document.querySelector("#myTable2 tbody");
+        for (let i = 4; i <= rowCount2; i++) {
+            const row = document.createElement("tr");
+
+            for (let j = 0; j < 5; j++) {
+            const cell = document.createElement("td");
+            cell.innerHTML = j === 0 ? i : "&nbsp;"; // 第一欄顯示列號，其他空白
+            row.appendChild(cell);
+            }
+
+            tbody2.appendChild(row);
+        }
     </script>
+    <script src="all.js"></script>
 </body>
 </html>

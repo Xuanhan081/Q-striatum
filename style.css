@@ -175,7 +175,7 @@ hr{
     background: #ffffff;
     max-width: 100%;
     overflow-x: auto;      /* 若內容太寬時可橫向捲動 */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border-radius: 5px;
     border: 1px solid var(--color-gray);
 }
@@ -230,6 +230,11 @@ iframe {
 
 .q-menu2 .tooltip-item::after{
   transform: translateX(-100%);
+}
+.topmenu-list .tooltip-item::after{
+    transform: translateX(20%);
+    top: 30%;
+    bottom: auto;
 }
 i{
     font-size: 25px;

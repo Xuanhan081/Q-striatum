@@ -1,0 +1,34 @@
+<!-- video-player.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q-striatum software Demo Video</title> <!-- 顯示在新視窗的標題列 -->
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <video id="vid" autoplay controls></video>
+
+  <script>
+    // 從網址查詢參數取得影片來源
+    const params = new URLSearchParams(window.location.search);
+    const videoSrc = params.get("src");
+    if (videoSrc) {
+      document.getElementById("vid").src = decodeURIComponent(videoSrc);
+    }
+  </script>
+</body>
+</html>

@@ -13,7 +13,7 @@
         <div class="title"><img src="icon/QTrodat.ico" alt="Logo">&nbsp;File Management</div>
         <header class="topmenu">
             <ul class="topmenu-list">
-                <li><a href="#" onclick="openPopup()" class="tooltip-item" data-tooltip="Upload DCM File (.dcm)">Help</a></li>
+                <li><a href="User Manual.pdf" target="_blank" class="tooltip-item" data-tooltip="User Manual">Help</a></li>
             </ul>
             <h4><i class="bi bi-arrow-down-circle-fill"></i> Click Any Region To Play Demo Video <i class="bi bi-arrow-down-circle-fill"></i></h4>
             <div></div>
@@ -242,10 +242,11 @@
     </script>
     <script src="all.js"></script>
     <script>
-        function openVideoPopup(src) {
+        function openVideoPopup(videoPath) {
+            const videoPageUrl = `video-player.html?src=${encodeURIComponent(videoPath)}`;
             window.open(
-            `${src}`,     // 網頁路徑（可換成任何網址）
-            "Demo_Video",    // 視窗名稱
+            videoPageUrl,
+            "Demo_Video",
             "width=1280,height=720,scrollbars=yes,resizable=yes"
             );
         }
